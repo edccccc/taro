@@ -21,7 +21,7 @@ class Index extends Component {
   render() {
     return (
       <Map onClick={this.onTap}>
-        <Button type='primary' size='small' circle className='checkIn' onClick={(e)=>this.handleBtnClick(e)}>施工签到</Button>
+        <Button type='primary' size='small' circle className='checkIn' onClick={(e)=>this.handleBtnClick(e)} hover-class='test'>施工签到</Button>
         <AtMessage />
       </Map>
     )
