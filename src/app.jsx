@@ -34,9 +34,13 @@ class App extends Component {
     tabBar: {
       list: [{
         pagePath: "pages/index/index",
+        iconPath: './assets/icon/checkIn.png',
+        selectedIconPath: './assets/icon/checkInActive.png',
         text: "签到",
       }, {
         pagePath: "pages/test/index",
+        iconPath: './assets/icon/record.png',
+        selectedIconPath: './assets/icon/recordActive.png',
         text: "记录",
       }],
       color: '#333',
@@ -44,25 +48,25 @@ class App extends Component {
       backgroundColor: '#fff',
       borderStyle: 'white'
     }
-}
+  }
 
-componentDidMount() { }
+  componentDidMount() { }
 
-componentDidShow() { }
+  componentDidShow() { }
 
-componentDidHide() { }
+  componentDidHide() { }
 
-componentDidCatchError() { }
+  componentDidCatchError() { }
 
-// 在 App 类中的 render() 函数没有实际作用
-// 请勿修改此函数
-render() {
-  return (
-    <Provider store={store}>
-      <Index />
-    </Provider>
-  )
-}
+  // 在 App 类中的 render() 函数没有实际作用
+  // 请勿修改此函数
+  render() {
+    return (
+      <Provider store={store}>
+        <Index />
+      </Provider>
+    )
+  }
 }
 
 Taro.render(<App />, document.getElementById('app'))
