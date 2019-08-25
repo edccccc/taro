@@ -5,6 +5,9 @@ import { AtMessage } from 'taro-ui'
 
 class Index extends Component {
   onTap() { }
+  componentDidShow(){
+    console.log('componentDidShow')
+  }
   handleBtnClick(e){
     // 阻止合成事件间的冒泡
     e.stopPropagation();
